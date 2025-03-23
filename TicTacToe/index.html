@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TICTACTOE</title>
+    <link rel="stylesheet" href="style.css"/>
+</head>
+
+<body>
+    <h1 class="heading">Tic Tac Toe</span></h1>
+    <div class="msg-container hide">
+        <p id="msg"></p>
+        <button id="new-btn" onclick="newGamePlaySound()">New Game</button>
+    </div>
+    <main></main>
+    <div class="container">
+        <div class="game">
+            <button class="box" onclick="boxClickPlaySound()"></button>
+            <button class="box" onclick="boxClickPlaySound()"></button>
+            <button class="box" onclick="boxClickPlaySound()"></button>
+            <button class="box" onclick="boxClickPlaySound()"></button>
+            <button class="box" onclick="boxClickPlaySound()"></button>
+            <button class="box" onclick="boxClickPlaySound()"></button>
+            <button class="box" onclick="boxClickPlaySound()"></button>
+            <button class="box" onclick="boxClickPlaySound()"></button>
+            <button class="box" onclick="boxClickPlaySound()"></button>
+        </div>
+    </div>
+    <button id="reset-btn" onclick="newGamePlaySound()">Reset Game</button>
+    </main>
+
+    <!-- sound effects -->
+    <audio id="box-click-sound">
+        <source src="sound-effects/box-click-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="new-game-sound">
+        <source src="sound-effects/new-game-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="game-win-sound">
+        <source src="sound-effects/game-win-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <audio id="game-draw-sound">
+        <source src="sound-effects/game-draw-sound.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="game.js"></script>
+</body>
+
+</html>
