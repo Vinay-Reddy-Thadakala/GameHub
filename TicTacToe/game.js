@@ -22,7 +22,8 @@ const winPatterns = [
 
 boxes.forEach((box) => {
     box.addEventListener("click", () => {
-        if(turnO){
+        boxClickPlaySound()
+        if (turnO){
             box.innerText = "O";
             box.classList.add("styling-o");
             box.classList.remove("styling-x");
@@ -40,8 +41,7 @@ boxes.forEach((box) => {
 
         let isWinner = checkWinner();
 
-        if (count === 9 && !isWinner)
-        {
+        if (count === 9 && !isWinner){
             drawGame();
         }
     });
@@ -91,6 +91,7 @@ const newGame = () => {
     msgContainer.classList.add("hide");
     gameContainer.classList.remove("hide");
     resetGameBtn.classList.remove("hide");
+    newGamePlaySound()
 }
 
 const drawGame = () => {
