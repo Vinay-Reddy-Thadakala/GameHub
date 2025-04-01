@@ -25,7 +25,7 @@ const playGame = (userChoice) => {
 
         if (userChoice === "rock"){
             //scissors, paper
-            userin = systemChoice === "paper" ? false : true;
+            userWin = systemChoice === "paper" ? false : true;
         }
         else if (userChoice === "paper"){
             //rock, scissors
